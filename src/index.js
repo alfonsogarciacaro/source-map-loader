@@ -70,7 +70,7 @@ export default async function loader(input, inputMap) {
   }
 
   if (sourceURL) {
-    this.addDependency(sourceURL);
+    // this.addDependency(sourceURL);
   }
 
   let map;
@@ -131,7 +131,7 @@ export default async function loader(input, inputMap) {
       if (skipReading) {
         sourceContent = originalSourceContent;
       } else if (!errored && sourceURL) {
-        this.addDependency(sourceURL);
+        // this.addDependency(sourceURL);
       }
 
       // Return original value of `source` when error happens
